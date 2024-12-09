@@ -67,6 +67,7 @@
     "**/*-dist/**",
     "**/icons/**",
     "pnpm-lock.yaml",
+    "settings.json",
     "**/*.log",
     "**/*.test.ts",
     "**/*.spec.ts",

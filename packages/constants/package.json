@@ -1,31 +1,25 @@
 {
-  "name": "@saas/styles",
+  "name": "@saas/constants",
   "version": "1.0.0",
   "homepage": "https://github.com/masj-mj/saas-admin-basic-template",
   "bugs": "https://github.com/masj-mj/saas-admin-basic-template/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/masj-mj/saas-admin-basic-template.git",
-    "directory": "packages/styles"
+    "directory": "packages/constants"
   },
   "license": "MIT",
   "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
     ".": {
       "types": "./src/index.ts",
       "default": "./src/index.ts"
-    },
-    "./antd": {
-      "default": "./src/antd/index.css"
-    },
-    "./ele": {
-      "default": "./src/ele/index.css"
-    },
-    "./global": {
-      "default": "./src/global/index.scss"
     }
   },
   "dependencies": {
-    "@saas-core/design": "workspace:*"
+    "@saas-core/shared": "workspace:*"
   }
 }
